@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+using namespace std;
+bool palindrom(string str)
+{
+    for(int i=0,j=str.length()-1 ;i<j ;i++,j--)
+    {
+        if(str[i] != str[j])return false;
+    }
+    return true;
+}
+int main() 
+{
+    string str = "abcncba";
+    if(palindrom(str))
+    {
+        cout<<"Yes it is palindrom";
+    }
+    else
+    {
+        cout<<"No , not a palindrom";
+    }
+}
